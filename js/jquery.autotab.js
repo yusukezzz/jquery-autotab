@@ -486,7 +486,7 @@
                             $(e).trigger('autotab-next', defaults);
 
                             if (!settings.iOS) {
-                                handlePaste(defaults.target[0], filteredValue);
+                                handlePaste(defaults.target[0], e.value.toLowerCase());
                             }
                         }
 
